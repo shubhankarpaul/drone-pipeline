@@ -1,0 +1,17 @@
+---
+pipeline:
+  build_image:
+    <<: *push_feature
+    tags:
+    - alpha
+
+############
+## Common ##
+############
+
+repo: &repo
+  repo: glibc
+
+push_feature: &push_feature
+  when:
+    event: [ push ]
