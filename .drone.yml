@@ -9,4 +9,9 @@ steps:
   commands:
   - apk update
 
+- name: build
+  image: golang:1.12
+  commands:
+  - go build
+  - go test
 ...
