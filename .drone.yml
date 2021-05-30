@@ -3,15 +3,4 @@ kind: pipeline
 type: docker
 name: default
 
-steps:
-- name: backend
-  image: alpine
-  commands:
-  - apk update
-
-- name: frontend
-  image: node
-  commands:
-  - npm install
-  - npm test
 ...
