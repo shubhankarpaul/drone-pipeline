@@ -9,9 +9,9 @@ steps:
   commands:
   - apk update
 
-- name: build
-  image: golang:1.12
+- name: frontend
+  image: node
   commands:
-  - go build
-  - go test
+  - npm install
+  - npm test
 ...
